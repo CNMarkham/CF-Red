@@ -25,12 +25,16 @@ public class Projectile : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
-        {
+        {  
+            teleport.enemyCount -= 1;
             Destroy(collision.gameObject);
             Destroy(gameObject);
-            teleport.enemyCount -= 1;
+
         }
+
     }
+
+
 
     private void destroyThrowable()
     {
