@@ -145,3 +145,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {fileID: 0}
   speed: 8
+  teleport: {fileID: 0}
