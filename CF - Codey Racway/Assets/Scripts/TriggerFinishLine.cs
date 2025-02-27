@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class TriggerFinishLine : MonoBehaviour
 {
+    public CheckpointCounter checkpointCounter;
+
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
-            print("You Win");
+            if (checkpointCounter.triggeredCheckpoints == checkpointCounter.numberOfCheckpoints)
+            {
+                Debug.Log("You Win");
+            }
+            else
+            {
+                Debug.Log("Cheater");
+            }
         }
     }
 }
