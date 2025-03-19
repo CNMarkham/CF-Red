@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TriggerFinishLine : MonoBehaviour
 {
     public CheckpointCounter checkpointCounter;
+    public bool win = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -12,11 +14,13 @@ public class TriggerFinishLine : MonoBehaviour
         {
             if (checkpointCounter.triggeredCheckpoints == checkpointCounter.numberOfCheckpoints)
             {
-                Debug.Log("You Win");
+                print("You Win");
+                win = true;
+                SceneManager.LoadScene(0);
             }
             else
             {
-                Debug.Log("Cheater");
+                print("Cheater");
             }
         }
     }

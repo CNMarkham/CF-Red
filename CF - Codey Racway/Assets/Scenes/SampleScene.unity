@@ -1636,6 +1636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkpointCounter: {fileID: 580191962}
+  win: 0
 --- !u!1001 &271278524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2990,10 +2991,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421bbcd7dec955c47b6e47f057e08464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lapTime: {fileID: 0}
-  startCountdown: {fileID: 0}
-  totalLapTime: {fileID: 0}
-  totalCountdownTime: 0
+  lapTime: {fileID: 1134551116}
+  startCountdown: {fileID: 1835896854}
+  totalLapTime: 150
+  totalCountdownTime: 3
+  CodeyMove: {fileID: 238164146}
+  Speed: 0
+  FinishLine: 0
+  Finish: {fileID: 270613236}
 --- !u!1001 &580269377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7288,6 +7293,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6057140222963153312, guid: a656d097d5ac93b4cabeb8a33bbe1bca, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 61bdb146442ca6943aa108c656c556ff, type: 2}
     - target: {fileID: -4216859302048453862, guid: a656d097d5ac93b4cabeb8a33bbe1bca, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
