@@ -16,7 +16,6 @@ public class TriggerFinishLine : MonoBehaviour
             {
                 print("You Win");
                 win = true;
-                SceneManager.LoadScene(0);
             }
             else
             {
