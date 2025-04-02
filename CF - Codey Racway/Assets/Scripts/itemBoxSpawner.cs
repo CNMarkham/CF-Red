@@ -13,9 +13,13 @@ public class itemBoxSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameObject.SetActive(true);
+
         for(var i = 0; i < numberOfBoxes; i++)
         {
             GameObject itemBoxClone = Instantiate(itemBox, new Vector3 (transform.position.x + modifyXPosition * i, transform.position.y, transform.position.z + modifyZPosition * i), transform.rotation);
         }
     }
+
+    
 }

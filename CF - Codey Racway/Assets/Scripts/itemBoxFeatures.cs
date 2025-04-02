@@ -13,6 +13,6 @@ public class itemBoxFeatures : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Rotate(100 * Time.deltaTime,100 * Time.deltaTime,100 *  Time.deltaTime);
     }
 }
