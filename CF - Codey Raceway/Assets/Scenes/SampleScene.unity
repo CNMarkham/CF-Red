@@ -1023,6 +1023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HQBigRock (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 165230, guid: 751682349ef7b8546aff2c104411f6b3, type: 3}
+      propertyPath: m_TagString
+      value: obstacles
+      objectReference: {fileID: 0}
     - target: {fileID: 490504, guid: 751682349ef7b8546aff2c104411f6b3, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -1383,27 +1387,6 @@ MonoBehaviour:
   canMove: 1
   move: {x: 0, y: 0, z: 0}
   _rotationSpeed: 50
---- !u!65 &238164155
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238164146}
-  m_Material: {fileID: 13400000, guid: 4fff81d8b9c917040adab491b8fffbe0, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 1
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 0.51135254, z: 1}
-  m_Center: {x: 0, y: 0.24432373, z: 0}
 --- !u!114 &238164157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1416,7 +1399,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34727d3c8e3bb874aabc81b732533259, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerupList: []
+  powerupList:
+  - {fileID: 5250206770020960882, guid: 8749b3ee9ca128f43a16023ef5b41e99, type: 3}
+  - {fileID: 5069586295145086457, guid: aca7377bb0fab8548b8787ce95cda145, type: 3}
+  randomNumberInList: 0
+  chosenPowerup: {fileID: 0}
+--- !u!65 &238164159
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238164146}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2.974557, z: 1}
+  m_Center: {x: 0, y: 1.5665679, z: 0}
 --- !u!1 &241982826
 GameObject:
   m_ObjectHideFlags: 0
@@ -5804,6 +5812,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HQBigRock (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 165230, guid: 751682349ef7b8546aff2c104411f6b3, type: 3}
+      propertyPath: m_TagString
+      value: obstacles
+      objectReference: {fileID: 0}
     - target: {fileID: 490504, guid: 751682349ef7b8546aff2c104411f6b3, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -7646,10 +7658,10 @@ PrefabInstance:
       addedObject: {fileID: 238164152}
     - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: a656d097d5ac93b4cabeb8a33bbe1bca, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 238164155}
+      addedObject: {fileID: 238164157}
     - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: a656d097d5ac93b4cabeb8a33bbe1bca, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 238164157}
+      addedObject: {fileID: 238164159}
   m_SourcePrefab: {fileID: 100100000, guid: a656d097d5ac93b4cabeb8a33bbe1bca, type: 3}
 --- !u!1001 &1442821772
 PrefabInstance:
@@ -9494,13 +9506,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750812754}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 41.34, y: -5.72, z: -57.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 680772988}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1750812756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10431,6 +10443,10 @@ PrefabInstance:
     - target: {fileID: 165230, guid: 751682349ef7b8546aff2c104411f6b3, type: 3}
       propertyPath: m_Name
       value: HQBigRock
+      objectReference: {fileID: 0}
+    - target: {fileID: 165230, guid: 751682349ef7b8546aff2c104411f6b3, type: 3}
+      propertyPath: m_TagString
+      value: obstacles
       objectReference: {fileID: 0}
     - target: {fileID: 490504, guid: 751682349ef7b8546aff2c104411f6b3, type: 3}
       propertyPath: m_LocalScale.x
