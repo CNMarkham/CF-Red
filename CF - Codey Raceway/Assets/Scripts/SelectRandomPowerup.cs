@@ -11,9 +11,12 @@ public class SelectRandomPowerup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp("space"))
+        if (Input.GetKeyUp("space") && chosenPowerup != null)
         {
-            GameObject powerup = Instantiate(chosenPowerup, new Vector3(transform.position.x, transform.position.y, transform.position.z), transform.rotation);
+            Vector3 spawnPosition = transform.position + (transform.forward * 5);
+
+            GameObject powerup = Instantiate(chosenPowerup, spawnPosition, transform.rotation);
+            chosenPowerup = null;
         }
     }
 
