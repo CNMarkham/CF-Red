@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShellMovement : MonoBehaviour
+public class PowerupMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject CodeyMove;
+    public float speed;
+
     void Start()
     {
-        
+        speed = CodeyMove.GetComponent<CodeyMove>().Speed;
     }
 
     // Update is called once per frame
@@ -18,7 +20,7 @@ public class ShellMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == ("obstacles"))
+        if (collision.gameObject.tag == ("obstacles"))
         {
             Destroy(collision.gameObject);
             Destroy(transform.gameObject);

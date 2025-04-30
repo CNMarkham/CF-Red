@@ -1,13 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
-public class ShellMovement : MonoBehaviour
+public class NavMeshMovement : MonoBehaviour
 {
+    private NavMeshAgent agent;
+    public Transform obstacle;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        agent = GetComponent<NavMeshAgent>();
+        obstacle = GameObject.FindGameObjectWithTag("obstacles").transform;
+        agent.destination = obstacle.position;
     }
 
     // Update is called once per frame
