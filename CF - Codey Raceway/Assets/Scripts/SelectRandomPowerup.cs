@@ -13,7 +13,7 @@ public class SelectRandomPowerup : MonoBehaviour
     {
         if (Input.GetKeyUp("space"))
         {
-            GameObject powerup = Instantiate(chosenPowerup, new Vector3(transform.position.x, transform.position.y, transform.position.z), transform.rotation);
+            GameObject powerup = Instantiate(chosenPowerup, new Vector3(transform.position.x+1, transform.position.y+1, transform.position.z+1), transform.rotation);
         }
     }
 

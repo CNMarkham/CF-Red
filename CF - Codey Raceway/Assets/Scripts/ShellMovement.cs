@@ -13,7 +13,7 @@ public class ShellMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += transform.forward * Time.deltaTime * 5000;
+        transform.position += transform.forward * Time.deltaTime * 50;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -21,7 +21,7 @@ public class ShellMovement : MonoBehaviour
         if(collision.gameObject.tag == ("obstacles"))
         {
             Destroy(collision.gameObject);
-            Destroy(transform);
+            Destroy(transform.gameObject);
         }
     }
 }
