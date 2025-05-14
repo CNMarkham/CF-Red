@@ -12,8 +12,22 @@ public class NavMeshMovement : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        obstacle = GameObject.FindGameObjectWithTag("obstacles").transform;
-        agent.destination = obstacle.position;
+
+        GameObject closestObject = null;
+        float minDistance = Mathf.Infinity;
+        
+        foreach (GameObject go in GameObject.FindGameObjectsWithTag("obstacles"))
+        {
+            float distance = Vector3.Distance(go.transform.position, transform.position);
+            if (distance < minDistance)
+            {
+                closestObject = go;
+                minDistance = distance;
+            }
+        }
+
+        agent.destination = closestObject.transform.position;
+
     }
 
     // Update is called once per frame

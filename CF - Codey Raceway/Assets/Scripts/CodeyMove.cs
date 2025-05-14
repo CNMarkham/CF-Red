@@ -10,11 +10,13 @@ public class CodeyMove : MonoBehaviour
     public Vector3 move;
     public float _rotationSpeed = 50f;
     private Rigidbody rb;
+
     void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
+
     }
     void Update()
     {
@@ -33,4 +35,5 @@ public class CodeyMove : MonoBehaviour
         }
         
     }
+
 }

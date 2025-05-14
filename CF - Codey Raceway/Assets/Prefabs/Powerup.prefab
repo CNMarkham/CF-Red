@@ -56,8 +56,32 @@ PrefabInstance:
       propertyPath: m_Name
       value: Powerup
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5193876494731868964, guid: aca7377bb0fab8548b8787ce95cda145, type: 3}
+    - {fileID: 2101977860286458058, guid: aca7377bb0fab8548b8787ce95cda145, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5069586295145086457, guid: aca7377bb0fab8548b8787ce95cda145, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4380276519898938451}
   m_SourcePrefab: {fileID: 100100000, guid: aca7377bb0fab8548b8787ce95cda145, type: 3}
+--- !u!1 &9140600996934712453 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5069586295145086457, guid: aca7377bb0fab8548b8787ce95cda145, type: 3}
+  m_PrefabInstance: {fileID: 4072162042173211004}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4380276519898938451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9140600996934712453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c020e14055dbd924f8b0975340d12c0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CodeyMove: {fileID: 0}
+  speed: 0

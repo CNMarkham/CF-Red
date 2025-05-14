@@ -10,6 +10,7 @@ public class TimersCountdown : MonoBehaviour
 {
     public TMP_Text lapTime;
     public TMP_Text startCountdown;
+    public TMP_Text winText;
 
     public float totalLapTime;
     public float totalCountdownTime;
@@ -48,8 +49,9 @@ public class TimersCountdown : MonoBehaviour
         }
         if(totalLapTime <= 0)
         {
-            print("Time Is Up");
+            winText.text = ("Time Is Up");
             SceneManager.LoadScene(0);
-        }
+      }
     }
+
 }

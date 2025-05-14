@@ -4,18 +4,15 @@ using UnityEngine;
 
 public class PowerupMovement : MonoBehaviour
 {
-    public GameObject CodeyMove;
-    public float speed;
-
     void Start()
     {
-        speed = CodeyMove.GetComponent<CodeyMove>().Speed;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += transform.forward * Time.deltaTime * 50;
+        transform.position += transform.forward* Time.deltaTime * 50;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -26,4 +23,5 @@ public class PowerupMovement : MonoBehaviour
             Destroy(transform.gameObject);
         }
     }
+
 }
