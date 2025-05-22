@@ -23,13 +23,18 @@ public class TriggerFinishLine : MonoBehaviour
             {
                 winText.text = ("You Win");
                 win = true;
-                SceneManager.LoadScene(0);
+                Invoke("reloadScene", 7);
             }
             else
             {
                 winText.text = ("Cheater");
-                SceneManager.LoadScene(0);
+                Invoke("reloadScene", 7);
             }
         }
+    }
+
+    private void reloadScene()
+    {
+        SceneManager.LoadScene(0);
     }
 }

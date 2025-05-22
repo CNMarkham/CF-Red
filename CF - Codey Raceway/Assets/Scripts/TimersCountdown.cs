@@ -50,8 +50,15 @@ public class TimersCountdown : MonoBehaviour
         if(totalLapTime <= 0)
         {
             winText.text = ("Time Is Up");
-            SceneManager.LoadScene(0);
+            Invoke("timeIsUp", 7);
+            totalLapTime = 0;
       }
+    }
+
+
+    private void timeIsUp()
+    {
+        SceneManager.LoadScene(0);
     }
 
 }
